@@ -8,15 +8,15 @@ alert (a);
 alert (a);
 
 2.
-let firstIphoneYear = 2007;
+let ReleaseFirstIphoneYear = 2007;
 alert(firstIphoneYear);
 
 3.
-let `userName` = 'Brandan Eich';
-alert (userName);
+let createrJS = 'Brandan Eich';
+alert (createrJS);
 
-let `userName` = 'Brandan Eich';
-console.log (userName);
+let createrJS = 'Brandan Eich';
+console.log (createrJS);
 
 4.
 let `a` = 10;

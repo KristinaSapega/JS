@@ -38,3 +38,8 @@ if (d > 100 || e > 100) {
 } else {
     console.log("Неверно");
   }
+
+  //4.
+let a = 2;
+let b = 3;
+alert(a + b);

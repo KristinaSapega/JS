@@ -40,60 +40,49 @@ if (d > 100 || e > 100) {
 
 
 //4.
-let a = 2;
-let b = 3;
+/* let a = '2';
+let b = '3';
 alert(a + b);
+*/
+
+let a = `2`;
+let b = `3`;
+alert (Number (a) + Number (b));
+
 
 //5.
-let monthNumber = prompt (`Введите номер месяца`);
+let monthNumber = Number( prompt (`Введите номер месяца`) );
 if (monthNumber <= 12) {
 switch (monthNumber) {
-    case `1`:
+    case 12:
+    case 1:
+    case 2:
     console.log (`Зима`);
     break;
-    case `2`:
-    console.log (`Зима`);
-    break;
-    case `3`:
+    case 3:
+    case 4:
+    case 5:
     console.log (`Весна`);
     break;
-    case `4`:
-    console.log (`Весна`);
-    break;
-    case `5`:
-    console.log (`Весна`);
-    break;
-    case `6`:
+    case 6:
+    case 7:
+    case 8:
     console.log (`Лето`);
     break;
-    case `7`:
-    console.log (`Лето`);
-    break;
-    case `8`:
-    console.log (`Лето`);
-    break;
-    case `9`:
+    case 9:
+    case 10:
+    case 11:
     console.log (`Осень`);
-    break;
-    case `10`:
-    console.log (`Осень`);
-    break;
-    case `11`:
-    console.log (`Осень`);
-    break;
-    case `12`:
-    console.log (`Зима`);
     break;
     default:
     console.log(`Такого месяца не существует`);
     break;
 }
-} else {
-    console.log(`Такого месяца не существует`);
-}
+}   
+
 
 //7.
-Создайте программу, проверяющую число на четность/нечетность 
+/*Создайте программу, проверяющую число на четность/нечетность 
 по следующему алгоритму:
 Создать переменную и присвоить ей значение с помощью метода 
 prompt()«Пожалуйста, введите любое число».
@@ -107,6 +96,7 @@ NaN.
 alert.
 Добавить проверку: если число нечетное, то вывести пользователю сообщение 
 «Число нечетное» с помощью alert.
+*/
 
 let input = prompt("Пожалуйста, введите любое число");
   let number = Number(input);
@@ -169,6 +159,22 @@ else {
 Важно: вложенность больше двух этажей не допускается 
 (условный оператор внутри условного оператора).
 */
+
+//вариант 0.
+const clientDeviceYear = 2023; // год создания устройства клиента
+const clientDeviceOS = 'Android'; // операционная система устройства клиента
+
+if (clientDeviceYear >= 2015) {
+  console.log('Установите приложение для ' + clientDeviceOS + ' по ссылке');
+} else if (clientDeviceOS === 'iOS') {
+  console.log('Установите облегченную версию приложения для ' + clientDeviceOS + ' по ссылке');
+} else if (clientDeviceOS === 'Android') {
+  console.log('Установите облегченную версию приложения для ' + clientDeviceOS + ' по ссылке');
+} else {
+  console.log('Не удалось определить операционную систему устройства');
+}
+
+
 //вариант 1.
 let clientOS = 0;
 let clientDeviceYear = 2023;
